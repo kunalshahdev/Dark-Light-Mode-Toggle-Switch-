@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mood Toggle</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="container">
+    <div class="card">
+      <div class="toggle-wrapper">
+        <input type="checkbox" id="theme-toggle" hidden>
+        <label for="theme-toggle" class="toggle-label">
+          <span class="toggle-track">
+            <span class="toggle-thumb">
+              <span class="icon sun">☀️</span>
+              <span class="icon moon">🌙</span>
+            </span>
+          </span>
+        </label>
+      </div>
+      <div class="greeting">
+        <p class="greeting-text">Good <span id="time-of-day">evening</span></p>
+        <p class="hint" id="hint-text">Switch to dark mode for a calmer glow ✨</p>
+      </div>
+      <div class="preview">
+        <div class="preview-card">
+          <div class="preview-dot"></div>
+          <div class="preview-lines">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <p class="footer">Your eyes deserve a break now and then 💛</p>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
